@@ -7,5 +7,5 @@ I'm interested in Robotic Engineering.So my bashrc setup might be around that to
 ```
 cd ~
 git clone https://github.com/VeryHardBit/bashrc_more
-echo '\nsource bashrc_more/setup.bash' >> ~/.bashrc
+echo -e '\nsource bashrc_more/setup.bash' >> ~/.bashrc
 ```
