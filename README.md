@@ -1,2 +1,4 @@
 # bashrc_more
-My custom bashrc
+This is my custom bashrc.<br>
+I'm interested in Robotic Engineering.So my bashrc setup might be around that topic.(like ROS,USB connection,Arduino,etc.,)
+
