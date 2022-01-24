@@ -10,5 +10,3 @@ cd ~
 git clone https://github.com/VeryHardBit/bashrc_more
 echo -e '\nsource bashrc_more/setup.bash\n' >> ~/.bashrc
 ```
-
-### Things that added
