@@ -13,6 +13,7 @@ alias use_ros_noetic='
 
 export ROS_ROMAIN_ID=30 #TURTLEBOT3
 export GAZEBO_IP=127.0.0.1
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models
 alias use_ros_foxy="
     alias nb='nano ~/.bashrc'
     alias sb='source ~/.bashrc'
@@ -24,6 +25,7 @@ alias use_ros_foxy="
     source /opt/ros/foxy/setup.bash
     source ~/colcon_ws/install/local_setup.bash
     alias ros2_pkg_create='ros2 pkg create --build-type ament_python $1'
+    alias ros_build_ws='rm -r build install log && colcon build'
 
     source ~/turtlebot3_ws/install/setup.bash
     source ~/construct_sim_ws/install/setup.bash
