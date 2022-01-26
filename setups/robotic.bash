@@ -11,8 +11,6 @@ alias use_ros_noetic='
     source ~/additional_noetic_pkg/devel/setup.bash
 '
 
-export ROS_ROMAIN_ID=30 #TURTLEBOT3
-export GAZEBO_IP=127.0.0.1
 alias use_ros_foxy="
     alias nb='nano ~/.bashrc'
     alias sb='source ~/.bashrc'
