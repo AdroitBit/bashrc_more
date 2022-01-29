@@ -19,7 +19,6 @@ mkdir -p $HOME/catkin_ws/src
 cd $HOME/catkin_ws
 catkin_make
 cd $HOME
-sudo rm -r $HOME/colcon_ws
+sudo rm -r $HOME/catkin_ws
 
 echo "[Complete]"
-exit 0
