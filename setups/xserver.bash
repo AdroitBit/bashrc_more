@@ -1,4 +1,4 @@
-if grep -q Microsoft /proc/version; then
+if grep -q WSL /proc/version; then
     #It mean you're using WSL
     #This will make us beable to connect to X-Server
     export DISPLAY="$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0"

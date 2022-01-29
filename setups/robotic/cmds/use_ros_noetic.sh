@@ -20,6 +20,8 @@ export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0
 
 #turtlebot2 yujin kobuki (please make sure too tho)
 alias install_turtlebot2="
+    mkdir -p turtlebot2_yujin_kobuki_ws/src &&
+    cd turtlebot2_yujin_kobuki_ws &&
     source $CMDS_DIR/ros_noetic_install_turtlebot2/cmd.sh
 "
 
