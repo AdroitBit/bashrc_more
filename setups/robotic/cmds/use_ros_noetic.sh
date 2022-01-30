@@ -22,3 +22,5 @@ export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0
 alias install_turtlebot2="
     source $CMDS_DIR/ros_noetic_install_turtlebot2/cmd.sh
 "
+
+
