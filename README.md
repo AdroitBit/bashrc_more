@@ -24,7 +24,7 @@ echo -e '\nsource ~/bashrc_more/setup.bash\n' >> ~/.bashrc
 - `usb_detach` disconnect that usb from wsl
 
 #### xserver.bash - this script is written for WSL with xserver installed and launched
-- no commands added just some finished enviroment setup for you
+- no commands added just some environment setup for you
 
 #### robotic.bash
 - set your GAZEBO_IP,ROS_DOMAIN_ID,GAZEBO_MODEL_PATH (might as well remove some for your certain task)
