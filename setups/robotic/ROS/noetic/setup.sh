@@ -4,6 +4,8 @@ CMDS_DIR=$SCRIPT_DIR/cmds
 source /opt/ros/noetic/setup.bash
 mkdir -p ~/ros_noetic_thing/
 cd ~/ros_noetic_thing
+#source ~/ros_noetic_thing/turtlebot2_ws/devel/setup.bash
+source ~/ros_noetic_thing/turtlebot2_robotcitizen_ws/devel/setup.bash
 
 export TURTLEBOT_BASE=kobuki
 export TURTLEBOT_STACKS=hexagons
@@ -18,6 +20,6 @@ alias ros_build_ws='catkin_make'
 alias ros_create_pkg="catkin_create_pkg \$1 std_msgs roscpp rospy "
 alias install_ros="source $CMDS_DIR/install_ros.sh"
 #install turtlebot2 yujin kobuki package
-#alias install_turtlebot2="source $CMDS_DIR/install_turtlebot2/way1.sh"
+#alias install_turtlebot2="source $CMDS_DIR/install_turtlebot2/way2.sh"
 #robotcitizen
-alias install_turtlebot2="source $CMDS_DIR/install_turtlebot2/way2.sh"
+alias install_turtlebot2="source $CMDS_DIR/install_turtlebot2/way1.sh"
