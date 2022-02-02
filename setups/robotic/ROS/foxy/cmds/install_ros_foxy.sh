@@ -29,4 +29,3 @@ sudo rm -r $HOME/colcon_ws
 
 
 echo "[Complete]"
-exit 0
