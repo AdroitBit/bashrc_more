@@ -1,4 +1,5 @@
 echo "You are about to install ros foxy"
+echo "If you're ready to install just press [ENTER] or [CTRL-C] if you aren't yet"
 read
 
 
