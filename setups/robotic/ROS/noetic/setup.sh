@@ -1,10 +1,9 @@
-source /opt/ros/noetic/setup.bash
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 CMDS_DIR=$SCRIPT_DIR/cmds
 
-alias ros_build_ws='catkin_make'
-alias install_ros=
-
+source /opt/ros/noetic/setup.bash
+mkdir -p ~/ros_noetic_thing/
+cd ~/ros_noetic_thing
 
 export TURTLEBOT_BASE=kobuki
 export TURTLEBOT_STACKS=hexagons
@@ -15,7 +14,10 @@ export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0
 #https://answers.ros.org/question/283248/require-help-mapping-using-turtlebot-2-and-an-rp-lidar-a2/
 
 
-#turtlebot2 yujin kobuki (please make sure too tho)
-alias install_turtlebot2="
-    source $CMDS_DIR/ros_noetic_install_turtlebot2/from_robotcitizen/cmd.sh
-"
+alias ros_build_ws='catkin_make'
+alias ros_create_pkg="catkin_create_pkg \$1 std_msgs roscpp rospy "
+alias install_ros="source $CMDS_DIR/install_ros.sh"
+#install turtlebot2 yujin kobuki package
+#alias install_turtlebot2="source $CMDS_DIR/install_turtlebot2/way1.sh"
+#robotcitizen
+alias install_turtlebot2="source $CMDS_DIR/install_turtlebot2/way2.sh"
