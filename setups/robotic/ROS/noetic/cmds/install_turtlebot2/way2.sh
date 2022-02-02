@@ -1,3 +1,5 @@
+#This is install from solution that was on reddit
+
 echo "Robot specification : Turtlebot2 yujin Kobuki"
 echo "[WARNING] : This installation is quite long"
 echo "If you're ready just press [ENTER] or [CTRL-C] if you aren't yet"

@@ -8,3 +8,4 @@ alias install_ros_noetic="source $CMDS_DIR/install_ros_noetic.sh"
 
 alias use_ros_noetic="source $CMDS_DIR/use_ros_noetic.sh"
 alias use_ros_foxy="source $CMDS_DIR/use_ros_foxy.sh"
+alias 
