@@ -12,6 +12,11 @@ git clone https://github.com/VeryHardBit/bashrc_more
 echo -e '\nsource ~/bashrc_more/setup.bash\n' >> ~/.bashrc
 ```
 
+### Uninstallation
+```
+sudo rm -r ~/bashrc_more
+```
+
 ### Added Commands
 #### general.bash
 - `cls` equivalently to clear
