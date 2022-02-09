@@ -28,6 +28,7 @@ alias install_ros="source $CMDS_DIR/install_ros.sh"
 #alias install_turtlebot2="source $CMDS_DIR/install_turtlebot2/way2.sh"
 #robotcitizen
 alias install_turtlebot2="source $CMDS_DIR/install_turtlebot2/way1.sh"
+alias install_turtlebot3="source $CMDS_DIR/install_turtlebot3.sh"
 #alias install_rplidar=
 #he aim for this one
 #https://github.com/robopeak/rplidar_ros/wiki
