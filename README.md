@@ -33,11 +33,6 @@ cp ~/bashrc_more/bashrc ~/.bashrc
 
 - `install_turtlebot2` install turtlebot3 packages.The ROS distro version is depent on $ROS_DISTRO in bashrc( currently found for ROS noetic)
 
-- `ros_create_ws` create ROS workspace
-
-- `ros_create_pkg` create ROS package
-
-
 
 
 
@@ -45,3 +40,9 @@ cp ~/bashrc_more/bashrc ~/.bashrc
 - set your DISPLAY (for WSL) to make you beable to connect to Xserver
 
 - set your GAZEBO_IP,ROS_DOMAIN_ID,GAZEBO_MODEL_PATH (might as well remove some for your certain task)
+
+
+### Trying to add this commands (or make it works)
+- `ros_create_ws` create ROS workspace
+
+- `ros_create_pkg` create ROS package

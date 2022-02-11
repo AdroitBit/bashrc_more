@@ -169,13 +169,17 @@ then
     export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0
     export GAZEBO_IP=127.0.0.1
 
-    alias ros_create_pkg="catkin_create_pkg \$1 std_msgs roscpp rospy "
-    alias ros_build_ws='catkin_make'
-    alias ros_create_ws='source ~/bashrc_more/extend_cmds/ros_create_ws.py'
+    EXTEND_CMDS="~/bashrc_more/extend_cmds"
 
-    alias install_ros='source ~/bashrc_more/extend_cmds/install_ros_noetic.sh'
-    alias install_turtlebot2='source ~/bashrc_more/extend_cmds/install_turtlebot2_noetic.sh'
-    alias install_turtlebot3='source ~/bashrc_more/extend_cmds/install_turtlebot3_noetic.sh'
+    alias ros_create_pkg="echo 'catkin_create_pkg \$0 std_msgs roscpp rospy'"
+    #workaround : $ catkin_create_pkg package_name std_msgs roscpp rospy
+    alias ros_build_ws='catkin_make'
+    alias ros_create_ws='python $EXTEND_CMDS/ros_create_ws.py'
+    #workaround : $ mkdir -p ws_name/src
+
+    alias install_ros='source $EXTEND_CMDS/install_ros_noetic.sh'
+    alias install_turtlebot2='source $EXTEND_CMDS/install_turtlebot2_noetic.sh'
+    alias install_turtlebot3='source $EXTEND_CMDS/install_turtlebot3_noetic.sh'
 
     #resource to use rplidar on turtlebot2
     #https://github.com/roboticslab-fr/rplidar-turtlebot2
