@@ -1,6 +1,7 @@
 # bashrc_more
 This is my custom bashrc.<br>
 I'm interested in Robotic Engineering so my bashrc setup is around that topic.<br>
+<<<<<<< HEAD
 This designed to be working for both WSL-Ubuntu and Native Ubuntu
 
 ### Installation
@@ -46,3 +47,6 @@ asd
 - `ros_create_ws` create ROS workspace
 
 - `ros_create_pkg` create ROS package
+=======
+This is designed to be working for both WSL-Ubuntu and Native Ubuntu
+>>>>>>> 5047ae83f1e4450895e45f45ecbe1bc02f7efa01
