@@ -197,5 +197,5 @@ then
     alias install_turtlebot3='source ~/bashrc_more/extend_cmds/install_turtlebot3_foxy.sh'
 fi
 
-cd ~
+
 ####################################################################################################
