@@ -1,1 +1,0 @@
-cp ~/bashrc_more/bashrc ~/.bashrc

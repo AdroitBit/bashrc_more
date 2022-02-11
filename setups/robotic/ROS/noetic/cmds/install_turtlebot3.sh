@@ -1,8 +1,16 @@
+
+
 set -o pipefail
+
 echo "Robot specification : Turtlebot3"
 echo "If you're ready just press [ENTER] or [CTRL-C] if you aren't yet"
 echo "If the following process doesn't install properly,please refer to https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/ "
 read
+
+
+#echo "[Updating]"
+#sudo apt update -y
+#sudo apt upgrade -y
 
 echo "[Install dependencies packages]"
 sudo apt-get -y install ros-noetic-joy ros-noetic-teleop-twist-joy \
@@ -26,6 +34,7 @@ ws_name=$(pwd)
 echo "[Download turtlebot3 simulation package]"
 cd $ws_name/src
 git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+
 
 echo "[Building workspace]"
 cd $ws_name

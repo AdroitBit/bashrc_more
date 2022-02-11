@@ -1,5 +1,8 @@
+#This way is install from Robotcitizen
+
 set -o pipefail
-#This way will install from Robotcitizen
+
+
 echo "Robot specification : Turtlebot2 yujin Kobuki"
 echo "[WARNING] : This installation is quite long"
 echo "If you're ready just press [ENTER] or [CTRL-C] if you aren't yet"
@@ -9,6 +12,8 @@ echo "[Install necessary packages for turtlebot2]"
 sudo apt install -y ros-noetic-joy ros-noetic-map-server ros-noetic-move-base ros-noetic-amcl ros-noetic-gmapping ros-noetic-ecl-* python-is-python3 ros-noetic-dwa-local-planner
 echo "[Install SLAM package]"
 sudo apt-get install ros-noetic-hector-slam
+
+
 
 echo "[Creating turtlebot2 workspace]"
 ws_name="turtlebot2_robotcitizen_ws"
@@ -26,9 +31,11 @@ echo "[Download turtlebot2 rplidar package]"
 cd $ws_name/src
 git clone https://github.com/robopeak/rplidar_ros/
 
+
+
 echo "[Building workspace]"
 cd $ws_name
 catkin_make
 
- echo "[Installation completed]"
- cd $ws_name/..
+echo "[Installation completed]"
+cd $ws_name/..
