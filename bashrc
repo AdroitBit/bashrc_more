@@ -120,7 +120,7 @@ fi
 
 
 ####################################################################################################
-#This is from VeryHardBit/custom_bashrc
+#This is from VeryHardBit/bashrc_more
 
 if grep -q WSL /proc/version;#If you're using WSL
 then 
