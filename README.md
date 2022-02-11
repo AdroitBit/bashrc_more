@@ -46,3 +46,7 @@ cp ~/bashrc_more/bashrc ~/.bashrc
 - `ros_create_ws` create ROS workspace
 
 - `ros_create_pkg` create ROS package
+
+
+### Note
+This is wasted repository as ROS have a lot of problems with sourcing workspace through "alias" and "if then" command 😞 so dissappointed
