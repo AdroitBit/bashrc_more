@@ -11,7 +11,7 @@ git clone https://github.com/VeryHardBit/bashrc_more
 cp ~/bashrc_more/bashrc ~/.bashrc
 ```
 
-
+asd
 ### Added Commands
 - `cls` equivalently to clear
 
