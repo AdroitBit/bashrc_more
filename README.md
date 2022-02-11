@@ -12,7 +12,6 @@ git clone https://github.com/VeryHardBit/bashrc_more
 cp ~/bashrc_more/bashrc ~/.bashrc
 ```
 
-asd
 ### Added Commands
 - `cls` equivalently to clear
 
@@ -47,6 +46,3 @@ asd
 - `ros_create_ws` create ROS workspace
 
 - `ros_create_pkg` create ROS package
-=======
-This is designed to be working for both WSL-Ubuntu and Native Ubuntu
->>>>>>> 5047ae83f1e4450895e45f45ecbe1bc02f7efa01
