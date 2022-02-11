@@ -158,7 +158,7 @@ if [ "$ROS_DISTRO" == "noetic" ]
 then
     source /opt/ros/noetic/setup.bash
     mkdir -p ~/ros_noetic_thing
-    cd ~/ros_noetic_thing
+    #cd ~/ros_noetic_thing
     
     source ~/ros_noetic_thing/turtlebot2_robotcitizen_ws/devel/setup.bash
     source ~/ros_noetic_thing/turtlebot3_ws/devel/setup.bash
@@ -187,7 +187,7 @@ if [ "$ROS_DISTRO" == "foxy" ]
 then
     source /opt/ros/foxy/setup.bash
     mkdir -p ~/ros_foxy_thing
-    cd ~/ros_foxy_thing
+    #cd ~/ros_foxy_thing
 
     export ROS_DOMAIN_ID=30 #TURTLEBOT3
     export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/ros_foxy_thing/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models
@@ -197,5 +197,5 @@ then
     alias install_turtlebot3='source ~/bashrc_more/extend_cmds/install_turtlebot3_foxy.sh'
 fi
 
-
+cd ~
 ####################################################################################################
