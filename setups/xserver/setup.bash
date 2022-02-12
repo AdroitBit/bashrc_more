@@ -1,5 +1,4 @@
-if grep -q WSL /proc/version; then
-    #It mean you're using WSL
+if [ $(is_on_wsl) = "True" ] ;then
     #This will make us beable to connect to X-Server
     export DISPLAY="$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0"
     #fix segmentation fault error by
