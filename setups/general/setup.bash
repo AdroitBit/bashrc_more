@@ -17,3 +17,6 @@ is_on_wsl(){
         echo "False"
     fi
 }
+
+#I use vscode as editor
+alias edit_bashrc_more='code ~/bashrc_more'

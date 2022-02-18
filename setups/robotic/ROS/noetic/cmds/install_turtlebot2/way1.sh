@@ -8,10 +8,18 @@ echo "[WARNING] : This installation is quite long"
 echo "If you're ready just press [ENTER] or [CTRL-C] if you aren't yet"
 read
 
+echo "[Updating packages]"
+sudo apt-get update
+
 echo "[Install necessary packages for turtlebot2]"
 sudo apt install -y ros-noetic-joy ros-noetic-map-server ros-noetic-move-base ros-noetic-amcl ros-noetic-gmapping ros-noetic-ecl-* python-is-python3 ros-noetic-dwa-local-planner
 echo "[Install SLAM package]"
 sudo apt-get install ros-noetic-hector-slam
+echo "[Install xacro packages]"#useful for dynamic transform
+sudo apt-get install ros-noetic-xacro ros-noetic-joint-state-publisher-gui
+echo "[Install something]"
+sudo apt-get install ros-noetic-ros-tutorials ros-noetic-geometry-tutorials ros-noetic-rviz ros-noetic-rosbash ros-noetic-rqt-tf-tree
+
 
 
 
@@ -39,3 +47,6 @@ catkin_make
 
 echo "[Installation completed]"
 cd $ws_name/..
+
+
+echo "Please consider to run rplidar_ros/scripts/create_udev_rules.sh after this"
