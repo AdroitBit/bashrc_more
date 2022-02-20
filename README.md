@@ -29,7 +29,7 @@ echo '~/bashrc_more/setup.bash\n' >> ~/.bashrc
 
 - `install_turtlebot3` install turtlebot3 packages.The ROS distro version is depent on $ROS_DISTRO in bashrc
 
-- `install_turtlebot2` install turtlebot3 packages.The ROS distro version is depent on $ROS_DISTRO in bashrc( currently found for ROS noetic)
+- `install_turtlebot2` install turtlebot2 packages.The ROS distro version is depent on $ROS_DISTRO in bashrc( currently added for ROS noetic)
 
 
 
