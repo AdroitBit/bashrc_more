@@ -7,8 +7,7 @@ This designed to be working for both WSL-Ubuntu and Native Ubuntu
 ```
 cd ~
 git clone https://github.com/VeryHardBit/bashrc_more
-#Be careful as this is entirely override your bashrc
-cp ~/bashrc_more/bashrc ~/.bashrc
+echo '~/bashrc_more/setup.bash\n' >> ~/.bashrc
 ```
 
 ### Added Commands
