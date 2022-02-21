@@ -1,5 +1,10 @@
 #This way is install from Robotcitizen
 
+#Another note :
+    #Credit https://www.reddit.com/r/ROS/comments/oxy4xt/is_ros1_noetic_compatible_with_turtlebot2/h7ufem6/
+    #Credit https://gist.github.com/DanManN/48ab84c977a3815cacc542835a60dbd7
+    #Just in case 404 error happens and show appreaciation toward him
+
 set -o pipefail
 
 
@@ -24,7 +29,7 @@ sudo apt-get install ros-noetic-ros-tutorials ros-noetic-geometry-tutorials ros-
 
 
 echo "[Creating turtlebot2 workspace]"
-ws_name="turtlebot2_robotcitizen_ws"
+ws_name="turtlebot2_ws"
 ros_create_ws $ws_name
 cd $ws_name
 ws_name=$(pwd)

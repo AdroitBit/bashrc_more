@@ -17,6 +17,7 @@ sudo apt install -y python3-rosdep python3-rosinstall python3-rosinstall-generat
 #rosdep update
 
 echo "[Make the catkin workspace and test catkin_make]"
+source ~/.bashrc
 mkdir -p $HOME/catkin_ws/src
 cd $HOME/catkin_ws
 catkin_make
