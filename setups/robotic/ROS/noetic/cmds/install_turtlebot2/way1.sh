@@ -17,13 +17,14 @@ echo "[Updating packages]"
 sudo apt-get update
 
 echo "[Install necessary packages for turtlebot2]"
-sudo apt install -y ros-noetic-joy ros-noetic-map-server ros-noetic-move-base ros-noetic-amcl ros-noetic-gmapping ros-noetic-ecl-* python-is-python3 ros-noetic-dwa-local-planner
+sudo apt-get install -y ros-noetic-joy ros-noetic-map-server ros-noetic-move-base ros-noetic-amcl ros-noetic-gmapping ros-noetic-ecl-* python-is-python3 ros-noetic-dwa-local-planner
 echo "[Install SLAM package]"
-sudo apt-get install ros-noetic-hector-slam
+sudo apt-get -y install ros-noetic-hector-slam
 echo "[Install xacro packages]"#useful for dynamic transform
-sudo apt-get install ros-noetic-xacro ros-noetic-joint-state-publisher-gui
+sudo apt-get -y install ros-noetic-xacro ros-noetic-joint-state-publisher-gui
 echo "[Install something]"
-sudo apt-get install ros-noetic-ros-tutorials ros-noetic-geometry-tutorials ros-noetic-rviz ros-noetic-rosbash ros-noetic-rqt-tf-tree
+sudo apt-get -y install ros-noetic-ros-tutorials ros-noetic-geometry-tutorials ros-noetic-rviz ros-noetic-rosbash ros-noetic-rqt-tf-tree
+sudo apt-get -y install ros-noetic-joy libftdi-dev ros-noetic-openslam-gmapping ros-noetic-base-local-planner ros-noetic-clear-costmap-recovery ros-noetic-move-base-msgs ros-noetic-navfn ros-noetic-rotate-recovery xsltproc ros-noetic-map-server ros-noetic-amcl ros-noetic-dwa-local-planner ros-noetic-rosbridge-* ros-noetic-ecl-console ros-noetic-ecl-command-line ros-noetic-ecl-converters ros-noetic-ecl-devices ros-noetic-ecl-geometry ros-noetic-ecl-mobile-robot ros-noetic-ecl-sigslots ros-noetic-ecl-time python3-empy ros-noetic-ddynamic-reconfigure ros-noetic-teb-local-planner
 
 
 
@@ -45,13 +46,14 @@ cd $ws_name/src
 git clone https://github.com/robopeak/rplidar_ros/
 
 
-
 echo "[Building workspace]"
 cd $ws_name
 catkin_make
 
+echo "[Create rplidar udev rules]"
+source $ws_name/devel/setup.bash
+source `rospack find rplidar_ros`/scripts/create_udev_rules.sh
+
+
 echo "[Installation completed]"
 cd $ws_name/..
-
-
-echo "Please consider to run rplidar_ros/scripts/create_udev_rules.sh after this"
