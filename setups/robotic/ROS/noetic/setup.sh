@@ -3,7 +3,6 @@ CMDS_DIR=$SCRIPT_DIR/cmds
 
 source /opt/ros/noetic/setup.bash
 mkdir -p ~/ros_noetic_thing/
-cd ~/ros_noetic_thing
 source ~/ros_noetic_thing/turtlebot3_ws/devel/setup.bash
 source ~/ros_noetic_thing/turtlebot2_ws/devel/setup.bash
 source ~/ros_noetic_thing/turtlebot_control_ws/devel/setup.bash

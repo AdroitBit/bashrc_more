@@ -9,11 +9,17 @@ static transform
     rosrun tf2_ros static_transform_publisher 1 0 0 0 0 0 robot_1 robot_2
     rviz
 
+
+There is some required packages for dynamic transform.You can find it in install_turtlebot2 
 dynamic transform:
+    This need urdf file
     download https://gist.github.com/joshnewans/69cb8a049fb4606b0a6bdecd6933164e to home folder
     roscore
-    
+    ros2 run robot_state_publisher robot_state_publisher --ros-args -p robot_description:="$( xacro ~/example_robot.urdf.xacro)"
+
+
     rosrun robot_state_publisher robot_state_publisher --ros-args -p robot_description:="$( xacro ~/example_robot.urdf.xacro)"
+    rosrun robot_state_publisher robot_state_publisher --ros-args -p robot_description:="$( cat ~/example_robot.urdf.xacro)"
 
 
 
