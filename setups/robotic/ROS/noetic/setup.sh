@@ -5,9 +5,9 @@ source /opt/ros/noetic/setup.bash
 mkdir -p ~/ros_noetic_thing/
 source ~/ros_noetic_thing/turtlebot3_ws/devel/setup.bash
 source ~/ros_noetic_thing/turtlebot2_ws/devel/setup.bash
-source ~/ros_noetic_thing/turtlebot_control_ws/devel/setup.bash
+source ~/ros_noetic_thing/control_turtlebot2_ws/devel/setup.bash
 #source ~/ros_noetic_thing/Turtlebot-Project/devel/setup.bash
-source ~/ros_noetic_thing/urdf_learning_ws/devel/setup.bash
+#source ~/ros_noetic_thing/urdf_learning_ws/devel/setup.bash
 
 export TURTLEBOT_BASE=kobuki
 export TURTLEBOT_STACKS=hexagons

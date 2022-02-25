@@ -14,12 +14,29 @@ There is some required packages for dynamic transform.You can find it in install
 dynamic transform:
     This need urdf file
     download https://gist.github.com/joshnewans/69cb8a049fb4606b0a6bdecd6933164e to home folder
-    roscore
+    
     ros2 run robot_state_publisher robot_state_publisher --ros-args -p robot_description:="$( xacro ~/example_robot.urdf.xacro)"
+    ros2 run joint_state_publisher_gui joint_state_publisher_gui
+    rviz2
 
+    we can also add RobotModel tab in rviz and set robot_description topic to robot_description
+    you can debug transform in ROS2 with
+    ros2 run tf2_tools view_frames.py
 
+    roscore
     rosrun robot_state_publisher robot_state_publisher --ros-args -p robot_description:="$( xacro ~/example_robot.urdf.xacro)"
     rosrun robot_state_publisher robot_state_publisher --ros-args -p robot_description:="$( cat ~/example_robot.urdf.xacro)"
+
+ีFor URDF(robot description) :   https://www.youtube.com/watch?v=CwdbsvcpOHM
+                                https://articulatedrobotics.xyz/ready-for-ros-7-urdf/
+    joint types:
+        revolute => joint like robot arm (limit,axis)
+        prismatic => only move in certain axis
+        continuous => can rotate but origin is fixed
+        fixed => just stay still
+    
+    ros2 run robot_state_publisher robot_state_publisher --ros-args -p robot_description:="$(xacro `rospack find urdf_example`/description/example_robot.urdf.xacro )"
+
 
 
 

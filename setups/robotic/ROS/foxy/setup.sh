@@ -2,6 +2,8 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 CMDS_DIR=$SCRIPT_DIR/cmds
 
 source /opt/ros/foxy/setup.bash
+source ~/ros_foxy_thing/learning_ws/install/setup.bash
+source ~/ros_foxy_thing/turtlebot2_ws/install/setup.bash
 mkdir -p ~/ros_foxy_thing/
 cd ~/ros_foxy_thing
 
