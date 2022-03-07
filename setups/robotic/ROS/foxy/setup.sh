@@ -4,8 +4,13 @@ CMDS_DIR=$SCRIPT_DIR/cmds
 source /opt/ros/foxy/setup.bash
 source ~/ros_foxy_thing/learning_ws/install/setup.bash
 source ~/ros_foxy_thing/turtlebot2_ws/install/setup.bash
-mkdir -p ~/ros_foxy_thing/
-cd ~/ros_foxy_thing
+source ~/ros_foxy_thing/KU_Robocup_ws/install/setup.bash
+
+read -p 'cd to "~/ros_foxy_thing/" ?[yes/no] : ' input
+if [[ "$input" == "y" ]] || [[ "$input" == "yes" ]];then
+    mkdir -p ~/ros_foxy_thing/
+    cd ~/ros_foxy_thing/
+fi
 
 export ROS_DOMAIN_ID=30 #TURTLEBOT3
 export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/ros_foxy_thing/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models

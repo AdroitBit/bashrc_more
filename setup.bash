@@ -6,6 +6,5 @@ source $SCRIPT_DIR/setups/xserver/setup.bash
 source $SCRIPT_DIR/setups/robotic/setup.bash
 
 
-
 #cd $HOME
 
